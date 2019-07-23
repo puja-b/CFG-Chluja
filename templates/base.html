@@ -11,10 +11,10 @@
   <body>
     {% include 'nav.html' without context %}
     <div id="content">{% block content %}
-    <img id="logo"src="file:///Users/pujabalachander/Documents/Webp.net-resizeimage.png">
+    <img id="logo" src="{{ url_for("static", filename="images/logo.png") }}">
     <h1>Hi, I'm Devie</h1>
     <h4> I support every parent to be their child's best first teacher </h4>
-    <img src="file:///Users/pujabalachander/Documents/Chill%20Wireframes.png">
+    <img src="{{ url_for("static", filename="images/wireframes.png") }}">
     <h2 id="features"> I can help with...</h2>
     <ul>
       <li>Emotional and wellbeing support</li>
@@ -23,7 +23,7 @@
       <li>Lessons, resources, and activities to help your child grow</li>
       <li>Connections to local, regional, and national resources that match your family's needs</li>
     </ul>
-    <button id="button" type="button" onclick="form.href='file:///Users/pujabalachander/Desktop/CFG/CFG%20project/CFG-Chluja/templates/addPost.html'">Sign Up to be a Beta Tester!</button>
+    <button id="button" type="button">Sign Up to be a Beta Tester!</button>
     {% endblock %}</div>
   </body>
 </html>

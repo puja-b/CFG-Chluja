@@ -2,40 +2,39 @@
   justify-content: center;
   margin: 20px;
   padding: 20px;
-  text-align: center;
 }
 
 #family {
   justify-content: center;
   margin: 20px;
   padding: 20px;
-  text-align: center;
 }
 
 #height {
   justify-content: center;
+  width:
   margin: 20px;
   padding: 20px;
-  text-align: center;
 }
 
 #rocket {
   justify-content: center;
   margin: 20px;
   padding: 20px;
-  text-align: center;
 }
 
 #reward {
   justify-content: center;
   margin: 20px;
   padding: 20px;
-  text-align: center;
 }
 
 #abc {
   justify-content: center;
   margin: 20px;
   padding: 20px;
+}
+
+.list-info {
   text-align: center;
 }

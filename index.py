@@ -29,10 +29,25 @@ def test(name):
 def email():
     return render_template('addPost.html')
 
-# POST EMAIL FORM ACTION
+# POST EMAIL FORM ACTION:
 @app.route("/email", methods=['POST'])
 def emailPost():
     return "Thanks {} Email was sent successfully".format(request.form['name'])
+
+# ABOUT US PAGE:
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+# SEARCH BAR:
+@app.route("/search")
+def search():
+    return render_template('search.html')
+
+# POST SEARCH:
+@app.route("/search", methods=['POST'])
+def searchSite():
+    return render_template('search.html')
 
 
 # What actually runs the app

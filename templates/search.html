@@ -1,0 +1,22 @@
+{% extends "nav.html" %}
+{% block title %}Sorry we are updating the site{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="rounded mx-auto d-block">
+    <img id="sad-pup" src="{{ url_for("static", filename="images/sad-pup.png") }}" alt="Pupper is sad because this page isnt ready" width="25%">
+  </div>
+<div>
+  <h2 class="display-4 container">Opps, sorry we are currently updating the site!</h2>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">Back to the homepage</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,3 +1,40 @@
-* {
-    color: blue;
+#logo {
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+#family {
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+#height {
+  justify-content: center;
+  width:
+  margin: 20px;
+  padding: 20px;
+}
+
+#rocket {
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+#reward {
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+#abc {
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.list-info {
+  text-align: center;
 }

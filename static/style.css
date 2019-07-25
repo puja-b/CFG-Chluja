@@ -1,3 +1,7 @@
+body {
+  display: flex;
+}
+
 #logo {
   justify-content: center;
   margin: 20px;
@@ -35,6 +39,34 @@
   padding: 20px;
 }
 
+#wireframes {
+  margin: 50px;
+  padding: 50px;
+}
+
+#icons {
+  align-items: center;
+}
+
+#call-to-action {
+  margin: 50px;
+}
+
 .list-info {
   text-align: center;
+  justify-content: space-around;
+}
+
+.intro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.chat {
+  padding-left: 50px;
+  padding-right: 50px;
 }

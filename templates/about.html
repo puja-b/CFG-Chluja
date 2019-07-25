@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+<div>
+  <br>
+  <br>
+  <br>
+  <h2 class="display-4 container">About Us</h2>
+  <br>
+  <br>
+  <br>
+</div>
+
+<div class="container">
+  <div class="rounded mx-auto d-block">
+    <img id="laura" src="{{ url_for("static", filename="images/laura.png") }}" alt="Laura White photograph" width="25%">
+  </div>
+  <br>
+  <br>
+  <br>
+  <h4>Laura is an early childhood educator and MBA student at University of Oxford. Prior to starting Devie, Laura taught three and four year-olds for the District of Columbia Public Schools in the U.S. She also has a master’s degree in early
+    childhood special education and has taught a preschool autism intervention class.</h4>
+  <br>
+  <br>
+  <hr class="my-4">
+  <br>
+  <br>
+</div>
+<div class="container">
+  <div class="rounded mx-auto d-block">
+    <img id="puja" src="{{ url_for("static", filename="images/Puja.png") }}" alt="Puja Balachander photograph" width="25%">
+  </div>
+  <br>
+  <br>
+  <br>
+  <h4>Puja is a social impact designer and current MBA student at the University of Oxford. Puja’s career has always been about following the lead of vulnerable communities to help them solve their most intractable problems. Puja has worked with a
+    range of organizations from local NGOs in India, to the World Bank and the Obama Administration, to design sustainable, equilibrium-shifting solutions with end-users including foster youth, seniors, recent immigrants, minorities, people
+    experiencing homelessness, veterans, Indian youth living in rural and urban poverty, and Malagasy subsistence farmers. She's excited to use her service design and user experience skills to help parents and caregivers support the development of
+    their young children through Devie!</h4>
+  <br>
+  <br>
+  <br>
+</div>
+<div class="container">
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/email" role="button">Get in touch</a>
+</div>
+
+
+
+
+
+{% endblock %}

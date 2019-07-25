@@ -4,22 +4,30 @@
 <br>
 <br>
 <div class="jumbotron container">
-  <h1>Sign up to beta test</h1>
+  <h1>Sign up to Beta Test!</h1>
+  <hr class="my-4">
+  <br>
   <form action="/email" method="POST">
     <div class="form-group">
       <label for="name">Name</label>
+      <br>
       <input type="text" name="name" autofocus>
     </div>
+    <br>
     <div class="form-group">
       <label for="parent-status">Are you a current parent? (please type yes or no)</label>
+      <br>
       <input type="text" name="parent-status">
     </div>
+    <br>
     <div class="form-group">
       <label for="child-age"> How old is your youngest child? (please type in months)</label>
+      <br>
       <input type="text" name="child-age">
     </div>
     <div class="form-group">
-      <input type="submit" value="Submit">
+      <br>
+      <input type="submit" value="Submit" class="btn btn-primary btn-lg" role="button">
     </div>
   </form>
   {% endblock %}

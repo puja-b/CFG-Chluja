@@ -1,43 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css” integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>
-    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
-  </head>
-
-  <body>
-    {% include 'nav.html' without context %}
-  <div>
-    <img id="logo" src="{{ url_for("static", filename="images/logo.png") }}">
-    <h1>Hi, I'm Devie</h1>
-    <h4> I support every parent to be their child's best first teacher </h4>
-  </div>
-
-<div>
-    <img src="{{ url_for("static", filename="images/wireframes.png") }}">
-    <h2 id="features"> I can help with...</h2>
-    <ul>
-      <li>Emotional and wellbeing support</li>
-      <li>Thinking through parenting challenges using child development research</li>
-      <li>Understanding and tracking your child's development</li>
-      <li>Lessons, resources, and activities to help your child grow</li>
-      <li>Connections to local, regional, and national resources that match your family's needs</li>
-    </ul>
-    <button id="button" type="button">Sign Up to be a Beta Tester!</button>
-    {% endblock %}</div>
-  </body>
-=======
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Hi, i'm Devie</title>
+  <link rel="shortcut icon" type="image/png" href="{{ url_for("static", filename="images/favicon.png") }}"/>
   <!--<link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css” integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>-->
   <link rel="stylesheet" href="{{ url_for("static", filename="bootstrap.css") }}">
   <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
@@ -45,7 +14,8 @@
 
 <body>
   {% include 'nav.html' without context %}
-  <div class="container" id="content">{% block content %}
+  {% block content %}
+  <div class="container" id="content">
     <br>
     <br>
     <br>
@@ -53,75 +23,89 @@
       <div class="col-sm">
         <img id="logo" src="{{ url_for("static", filename="images/logo.png") }}" alt="Devie logo" width="100%">
       </div>
-      <div class="intro">
-        <h1>Hi, I'm Devie</h1>
+      <br>
+      <br>
+      <br>
+      <div>
+        <h1 class="display-2">Hi, I'm Devie</h1>
         <h4>I support every parent to be their child's best first teacher</h4>
       </div>
-      <br>
-      <br>
-      <br>
       <div class="container">
-        <h2 id="features">I can help with...</h2>
+        <br>
+        <br>
+        <br>
+        <hr class="my-4">
+        <br>
+        <br>
+        <br>
+        <h2 id="features" class="display-4">I can help with...</h2>
+        <br>
         <br>
         <br>
         <div id="icons" class="row">
-          <div class="col-sm">
-            <img id="family" src="{{ url_for("static", filename="images/fruit.png") }}" alt="Fruit icon" width="100%">
-          </div>
-          <div class="col-sm">
-            <img id="reward" src="{{ url_for("static", filename="images/balloon.png") }}" alt="Balloon icon" width="100%">
-          </div>
-          <div class="col-sm">
-            <img id="abc" src="{{ url_for("static", filename="images/alpha.png") }}" alt="ABC icon" width="100%">
-          </div>
-          <div class="col-sm">
-            <img id="height" src="{{ url_for("static", filename="images/kite.png") }}" alt="Kite icon" width="100%">
-          </div>
-          <div class="col-sm">
-            <img id="rocket" src="{{ url_for("static", filename="images/puzzle.png") }}" alt="Puzzle icon" width="100%">
+          <div class="d-flex align-items-center">
+            <div class="col-sm">
+              <img id="baby-sleepers" src="{{ url_for("static", filename="images/baby-sleepers.png") }}" alt="Baby sleepers icon" width="100%">
+            </div>
+            <div class="col-sm">
+              <img id="old-abacus" src="{{ url_for("static", filename="images/old-abacus.png") }}" alt="Old abacus icon" width="100%">
+            </div>
+            <div class="col-sm">
+              <img id="letter-cubes" src="{{ url_for("static", filename="images/letter-cubes.png") }}" alt="ABC icon" width="100%">
+            </div>
+            <div class="col-sm">
+              <img id="first-birthday" src="{{ url_for("static", filename="images/first-birthday.png") }}" alt="First birthday icon" width="100%">
+            </div>
+            <div class="col-sm">
+              <img id="toy-train" src="{{ url_for("static", filename="images/toy-train.png") }}" alt="Toy train icon" width="100%">
+            </div>
           </div>
         </div>
         <br>
         <div class="container list-info">
           <div class="row">
-            <div class="col-sm">Emotional and wellbeing support</div>
-            <div class="col-sm">Thinking through parenting challenges using child development research</div>
-            <div class="col-sm">Understanding and tracking your child's development</div>
-            <div class="col-sm">Lessons, resources, and activities to help your child grow</div>
-            <div class="col-sm">Connections to local, regional, and national resources that match your family's needs</div>
+            <div class="col-sm">
+              <h5>Emotional and wellbeing support</h5>
+            </div>
+            <div class="col-sm">
+              <h5>Thinking through parenting challenges using child development research</h5>
+              </div>
+            <div class="col-sm">
+              <h5>Understanding and tracking your child's development</h5>
+              </div>
+            <div class="col-sm">
+              <h5>Lessons, resources, and activities to help your child grow</h5>
+              </div>
+            <div class="col-sm">
+              <h5>Connections to local, regional, and national resources that match your family's needs</h5>
+            </div>
           </div>
         </div>
         <br>
         <br>
-      <div class="container">
-          <img id="wireframes" src="{{ url_for("static", filename="images/devie.png") }}" alt="Wireframes example" width="100%">
+        <br>
+        <br>
+        <hr class="my-4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <img id="wireframes" src="{{ url_for("static", filename="images/devie-crop.png") }}" alt="Wireframes example" width="65%">
+          </div>
+          <div id="call-to-action" class="jumbotron container">
+            <h1 class="display-3">Sign up to be a Beta Tester!</h1>
+            <p class="lead">Join now and get the ball rolling on your childs development.</p>
+            <hr class="my-4">
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="/email" role="button">Learn more</a>
+            </p>
+          </div>
+        </div>
+        {% endblock %}
       </div>
-
-        <!--<ul>
-        <li>Emotional and wellbeing support</li>
-        <li>Thinking through parenting challenges using child development research</li>
-        <li>Understanding and tracking your child's development</li>
-        <li>Lessons, resources, and activities to help your child grow</li>
-        <li>Connections to local, regional, and national resources that match your family's needs</li>
-      </ul>
-      <button id="button" type="button" onclick="form.href='file:///Users/pujabalachander/Desktop/CFG/CFG%20project/CFG-Chluja/templates/addPost.html'">Sign Up to be a Beta Tester!</button>
-    </div>
-  </ul>-->
-
-  <div id="call-to-action" class="jumbotron container">
-    <h1 class="display-3">Sign up to be a Beta Tester!</h1>
-    <p class="lead">Join now and get the ball rolling on your childs development.</p>
-    <hr class="my-4">
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="/email" role="button">Learn more</a>
-    </p>
-  </div>
-
-  <!--<button id="button" type="button">Sign Up to be a Beta Tester!</button>-->
-  {% endblock %}
-</div>
 </body>
 {% include 'footer.html' without context %}
 
->>>>>>> 9176924d7456744e0ffb37ba300d6c6c78598906
 </html>

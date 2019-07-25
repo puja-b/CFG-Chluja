@@ -8,12 +8,16 @@
     <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css” integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>
     <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
   </head>
+
   <body>
     {% include 'nav.html' without context %}
-    <div id="content">{% block content %}
+  <div>
     <img id="logo" src="{{ url_for("static", filename="images/logo.png") }}">
     <h1>Hi, I'm Devie</h1>
     <h4> I support every parent to be their child's best first teacher </h4>
+  </div>
+
+<div>
     <img src="{{ url_for("static", filename="images/wireframes.png") }}">
     <h2 id="features"> I can help with...</h2>
     <ul>
